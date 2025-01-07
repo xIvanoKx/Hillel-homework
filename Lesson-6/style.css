@@ -1,0 +1,25 @@
+.box-off {
+    display: inline-block;
+}
+
+.box1 {
+    background-color: red;
+    display: inline-block;
+    padding: 50px;
+}
+.box2 {
+    background-color: green;
+    display: inline-block;
+
+}
+
+.box3 {
+    background-color: blue;
+    display: inline-block;
+
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
