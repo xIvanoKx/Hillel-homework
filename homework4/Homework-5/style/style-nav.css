@@ -1,0 +1,43 @@
+body {
+    background-image: url(/img/1.\ Main\ building.png);
+    background-size:cover; /* Масштабирует изображение по размеру экрана */
+    background-position: center; /* Центрирует изображение */
+    background-attachment: fixed; /* Фиксирует фон при прокрутке страницы */   
+}
+
+.main {
+    padding: 3em;
+}
+.nav-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.nav-panel>.serch-conteiner {
+    border: solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.nav-posulanya {
+color: black;
+}
+
+.main-text1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.main-text2 {
+    font-weight: 400;
+    font-size: 32px;
+
+}
+
+.main-page-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 0, 4);
+}
