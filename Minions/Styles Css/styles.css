@@ -1,0 +1,61 @@
+body {
+    background-color: gold;
+}
+
+.main-box {
+    background-color: rgb(93, 173, 230);
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+h1 {
+    padding-top: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.cart-box {
+    display: inline-block;
+    background-color: white;
+    border: 5px solid black;
+    margin: 25px;
+    width: 430px;
+    height: 500px;
+}
+
+.cart-box>img {
+    height: 350px;
+    width: 350px;
+}
+ 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(53, 56, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray;
+}
