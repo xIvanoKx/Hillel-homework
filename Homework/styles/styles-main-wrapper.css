@@ -1,0 +1,144 @@
+.main-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-main{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.My-plants-categories {
+    padding-bottom: 377px;
+}
+
+.Cattegories-box {
+    width: 100%;
+    background-color: #fbfbfb;
+
+}
+
+.My-plants-categories>h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: #3d3d3d;
+    margin-left: 18px;
+    margin-bottom: 7px;
+}
+
+.Categories {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #3d3d3d;
+    line-height: 267%;
+}
+
+.Categories-plants-nomer {
+    padding-left: 137px;
+}
+
+
+li>a {
+    color: black;
+}
+
+li>a:hover {
+    font-weight: 700;
+    font-size: 15px;
+    color: #46a358;
+}
+
+.Sale-img {
+    width: 370px;
+    height: 470px;
+}
+
+
+.main-content-cards {
+    display: inline-block;
+}
+
+.section-nav-panel {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+
+.section-nav-list,
+.Short-by {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+.plants-card {
+    background-color: #fbfbfb;
+    text-align: center;
+    height: 300px;
+    width: 258px;
+}
+
+.name-plants{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.name-plants>a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+
+.name-plants>a:hover {
+    font-weight: 700;
+    font-size: 18px;
+    color: #46a358;
+}
+
+.pice>a {
+    font-weight: 700;
+    font-size: 18px;
+    color: #46a358;
+}
+
+.pice>a:hover{
+    background-color: #46a358;
+    color: white;
+}
+
+
+.plants-cards-box {
+    display: inline-block;
+}
+
+
+
+.next-page {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 18px;
+    color: #3d3d3d;
+    border: 1px solid #E5E5E5 ;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.next-page a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.next-page:hover {
+    background-color: #46a358;
+    color: white;
+}
+
+.next-page:hover a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}

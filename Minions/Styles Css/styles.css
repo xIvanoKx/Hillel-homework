@@ -23,6 +23,7 @@ h1 {
     display: inline-block;
     background-color: white;
     border: 5px solid black;
+    vertical-align: top;
     margin: 25px;
     width: 430px;
     height: 500px;
@@ -58,4 +59,9 @@ button {
 
 button:hover {
     background-color: darkgray;
+}
+
+.conteiner {
+    max-width: 1440px     ;
+    margin: 0 auto;
 }
