@@ -1,0 +1,144 @@
+.main-wrapper {
+    max-width: 1205px;
+    margin: 0 auto;
+}
+
+.first-product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.summer-cactus {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 586px;
+    height: 300px;
+    background-color: #fbfbfb;
+}
+
+.flex-box-text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+.sumer-box {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    text-align: right;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+}
+
+.find-more {
+    width: 140px;
+    height: 40px;
+    background-color: #46a358;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #fff;
+    cursor:pointer;
+}
+
+.find-more:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.blog-posts-conteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    color: #3d3d3d;
+    padding-top: 138px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.blog-posts-conteiner-text{
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+
+}
+
+.flex-box-posts-cards-inline{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.flex-box-posts-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+}
+
+.flex-box-posts-cards-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    padding: 0 15px;
+    gap: 4px;
+}
+
+.time {
+    padding-top: 9px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+}
+
+.flex-box-posts-cards-text>h2>a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+}
+
+.text-cards{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+.read-more{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+}
+
+.read-more:hover{
+    color: #46a358;
+    font-weight: bold;
+}
