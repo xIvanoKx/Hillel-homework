@@ -1,144 +1,129 @@
 .main-wrapper {
-    max-width: 1205px;
     margin: 0 auto;
+    max-width: 840px;
+    
 }
 
-.first-product {
+.main-block {
     display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    
+}
+
+.main-nav-block, .main-nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav-block {
     justify-content: space-between;
-    margin-top: 69px;
-    flex-grow: 1;
-    flex-basis: 0;
 }
 
-.summer-cactus {
+.main-nav-list-right, .main-nav-list-left{
     display: flex;
-    justify-content: flex-end;
+    color: #3D3D3D;
+}
+
+.main-nav-list-left {
+    gap: 40px;
+}
+
+.main-nav-list-right {
+    gap: 8px;
+    justify-content: center;
     align-items: center;
-    width: 586px;
-    height: 300px;
-    background-color: #fbfbfb;
 }
 
-.flex-box-text {
+.nav-list-right a {
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-right: 30px;
+    align-items: center;
 }
 
-.sumer-box {
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 133%;
-    text-transform: uppercase;
-    color: #3d3d3d;
-    text-align: right;
-}
-
-.main-text {
+a{
     font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    text-align: right;
-    color: #727272;
+    font-size: 15px;
+    color: #3D3D3D;
 }
 
-.find-more {
-    width: 140px;
-    height: 40px;
-    background-color: #46a358;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 143%;
-    color: #fff;
-    cursor:pointer;
-}
-
-.find-more:hover{
-    color: black;
+a:hover{
+    color:#46A358;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-.blog-posts-conteiner{
-    display: flex;
-    flex-direction: column;
-}
 
-h1{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 53%;
-    color: #3d3d3d;
-    padding-top: 138px;
-    padding-bottom: 18px;
-    text-align: center;
-}
 
-.blog-posts-conteiner-text{
-    margin-bottom: 35px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    text-align: center;
-    color: #727272;
-
-}
-
-.flex-box-posts-cards-inline{
+.main-card-wrapper{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-
+    padding-top: 35px;
 }
 
-.flex-box-posts-cards{
+.main-card-block {
     display: flex;
     flex-direction: column;
-    background-color: #fbfbfb;
+    text-align: left;
+    position: relative;
+    background-color: #FBFBFB;
 }
 
-.flex-box-posts-cards-text{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    text-align: start;
-    padding: 0 15px;
-    gap: 4px;
+.main-card-block:hover{
+    border-top: 1px solid #46A358;
 }
 
-.time {
-    padding-top: 9px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 114%;
-    color: #46a358;
-}
 
-.flex-box-posts-cards-text>h2>a {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 130%;
-    color: #3d3d3d;
-}
-
-.text-cards{
+.plant-name{
+    padding-top: 12px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 157%;
-    color: #727272;
+    font-size: 16px;
+    color: #3D3D3D;
 }
 
-.read-more{
+.plant-price{
+    padding-top: 6px;
+    font-weight:700;
+    font-size: 18px;
+    color: #46A358;    
+}
+
+.plant-sale{
+    padding-left: 16px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.moving-panel{
+    display: none;
+    gap: 27px;
+    position: absolute;
+    top: 233px;
+    left: 67px;
+}
+
+.main-card-block:hover .moving-panel {
+    display: flex;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.nav-btn:hover {
+    background-color: rgb(242, 240, 237)
+}
+
+.sale-off{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #46A358;
+    font-size: 16px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 114%;
-    color: #3d3d3d;
-}
-
-.read-more:hover{
-    color: #46a358;
-    font-weight: bold;
+    padding: 7px;
+    position: absolute;
+    top: 14px;
 }
