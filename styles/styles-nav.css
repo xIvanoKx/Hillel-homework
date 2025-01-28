@@ -1,0 +1,89 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper,
+.nav-list,
+.login-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper {
+    padding-top: 30px;
+    border-bottom: 0.3px solid #46A35880;
+}
+
+.nav-list-text {
+    display: block;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D3D3D;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-list-text:hover {
+    font-weight: 700;
+    background-color: #EDF6EE;
+}
+
+.invisible-link {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 140px;
+    display: none;
+}
+
+.nav-list-text:hover .invisible-link,
+.invisible-link:hover {
+    display: block;
+    background-color: #EDF6EE;
+    font-weight: 400;
+}
+
+.invisible-list-plant-care {
+    position: relative;
+    display: block;
+    padding: 14px;
+}
+
+.invisible-list-plant-care:hover {
+    font-weight: 700;
+    background-color: #1A712A;
+    color: white;
+
+}
+
+.invisible-list-second {
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 141px;
+    color: black;
+    font-weight: 400;
+    background-color: #EDF6EE;
+    display: none;
+}
+
+.invisible-list-plant-care:hover .invisible-list-second {
+    display: block;
+}
+
+.login-btn {
+    padding: 8px 17px;
+    border-radius: 6px;
+    background-color: #46A358;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #4fb864;
+}

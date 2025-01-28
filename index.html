@@ -5,95 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles-nav.css" />
   </head>
   <body>
-    <main class="main-wrapper">
-      <section class="main-block">
-        <nav class="main-nav-block">
-          <div class="nav-list-block-left">
-            <ul class="main-nav-list-left">
-              <li class="nav-list-left"><a href="#">All Plants</a></li>
-              <li class="nav-list-left"><a href="#">New Arrivals</a></li>
-              <li class="nav-list-left"><a href="#">Sale</a></li>
-            </ul>
-          </div>
-          <div class="nav-list-block-right">
-            <ul class="main-nav-list-right">
-              <li class="nav-list-right">Short by:</li>
-              <li class="nav-list-right">
-                <a href="#"
-                  >Default sorting <img src="files/Stroke 1.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <div class="main-card-wrapper">
-          <div class="main-card-block">
-            <a href="#"
-              ><img src="files/image 1.png" alt="Barberton Daisy"
-            /></a>
-            <p class="plant-name">Barberton Daisy</p>
-            <p class="plant-price">$119.00</p>
-            <div class="moving-panel">
-              <button class="nav-btn">
-                <img src="files/basket.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/fav.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/lupa.svg" alt="" />
-              </button>
-            </div>
-          </div>
-
-          <div class="main-card-block">
-            <a href="#"
-              ><img
-                src="files/product-21-320x320 1.png"
-                alt="Angel Wing Begonia"
-            /></a>
-            <p class="plant-name">Angel Wing Begonia</p>
-            <p class="plant-price">$169.00</p>
-            <div class="moving-panel">
-              <button class="nav-btn">
-                <img src="files/basket.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/fav.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/lupa.svg" alt="" />
-              </button>
-            </div>
-          </div>
-
-          <div class="main-card-block">
-            <a href="#"><img src="files/image 2.png" alt="African Violet" /></a>
-            <p class="plant-name">African Violet</p>
-            <p class="plant-price">
-              $199.00<span class="plant-sale">$229.00</span>
-            </p>
-            <div class="sale-off">
-              <p>13% OFF</p>
-            </div>
-            <div class="moving-panel">
-              <button class="nav-btn">
-                <img src="files/basket.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/fav.svg" alt="" />
-              </button>
-              <button class="nav-btn">
-                <img src="files/lupa.svg" alt="" />
-              </button>
-            </div>
-          </div>
+    <header>
+      <nav class="nav-wrapper">
+        <div class="nav-logo-box">
+          <a href="index.html"><img src="files/Logo.png" alt="" /></a>
         </div>
-      </section>
-    </main>
+
+        <div class="nav-list-box">
+          <ul class="nav-list">
+            <li class="nav-list-text">Home</li>
+            <li class="nav-list-text">Shop</li>
+            <li class="nav-list-text">
+              Plant Care
+              <ul class="invisible-link">
+                <li class="invisible-list-plant-care">Drainage</li>
+                <li class="invisible-list-plant-care">Fungicides</li>
+                <li class="invisible-list-plant-care">Fertilizer</li>
+                <li class="invisible-list-plant-care">
+                  Priming
+                  <ul class="invisible-list-second">
+                    <li  class="invisible-list-plant-care" >Universal</li>
+                    <li  class="invisible-list-plant-care" >For Ficus</li>
+                    <li  class="invisible-list-plant-care" >For Cacti</li>
+                    <li  class="invisible-list-plant-care" >For Citrus</li>
+                    <li  class="invisible-list-plant-care" >For those in bloom</li>
+                    <li  class="invisible-list-plant-care" >For Orchids</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-text">Blogs</li>
+          </ul>
+        </div>
+
+        <div class="nav-login-box">
+          <button class="login-btn">
+            <img src="files/Logout.png" alt="Login" />Login
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
