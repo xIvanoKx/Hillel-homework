@@ -1,0 +1,98 @@
+.footer-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.cards-section {
+    margin-top: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #FBFBFB;
+}
+
+.plat-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 61px;
+    position: relative;
+}
+
+.line-1, .line-2{
+    height: 100%;
+    width: 1px;
+    position: absolute;
+}
+
+.line-1{
+    left: 32%;
+}
+
+.line-2{
+    right: 32%;
+}
+
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 204px;
+    height: 202px;
+
+}
+
+.card-name{
+    font-weight: 700;
+    font-size: 17px;
+    color: #3D3D3D;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+    gap: 20px;
+}
+
+.input-form{
+    display: flex;
+    align-items: center;
+
+}
+
+.input-name{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input[type="email"] {
+    height: 44px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.email-btn{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 12px 25px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input-text{
+    font-weight: 400;
+    font-style: 13px;
+    color: #727272;
+
+}
