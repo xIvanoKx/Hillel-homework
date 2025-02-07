@@ -1,0 +1,68 @@
+.checkbox-2{
+    padding-left: 30px;
+}
+.toombler {
+    display: inline-block;
+    width: 112px;
+    height: 52px;
+    position: relative;
+}
+
+.toombler input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+.move {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #539bee;
+    border-radius: 48px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.move::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    top: 5px;
+    bottom: 0;
+    left: 2px;
+    box-shadow: 0 3px 8px black;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+input:checked+.move {
+    background-color: #183153;
+}
+
+input:checked+.move::before {
+    transform: translateX(66px);
+}
+
+.fa-sun {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    z-index: 1;
+    color: #fed987;
+    font-size: 24px;
+}
+
+.fa-moon {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+}

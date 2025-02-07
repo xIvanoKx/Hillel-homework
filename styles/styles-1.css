@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCEBEB;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.checkbox {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.checkbox_input{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox_inner{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 84px;
+}
+
+.checkbox_inner::before{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 36px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.checkbox_inner::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: lime;
+    left: 3px;
+    top: 3px;
+    transition: .5s
+}
+
+/* Чекнуть можно только чекбокс инпут. 
+Значение "+" означает соседий элемент, в моем случае это спен */
+.checkbox_input:checked + .checkbox_inner::before{
+    background-color: lime;
+}
+
+.checkbox_input:checked+.checkbox_inner::after {
+    background-color: white;
+    left: 47px;
+}
