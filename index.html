@@ -3,36 +3,506 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkbox</title>
+    <title>about us</title>
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles-1.css" />
-    <link rel="stylesheet" href="styles/styles-2.css" />
-
-    <!-- fontawesome link -->
-    <script
-      src="https://kit.fontawesome.com/5f8032a6af.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="scss/main.css" />
+    <!-- Подключил через Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <div class="conteiner">
-      <div class="checkbox-box">
+    <div class="header__conteiner">
+      <header class="header">
+        <div class="header__information">
+          <div class="header__top">
+            <div class="header__contacts">
+              <div class="header__contacts-list">
+                <div class="header__contact-item">
+                  <div class="header__contact-icon">
+                    <a href="https://mail.google.com/"
+                      ><img
+                        src="/files/img/social-media/icons8-gmail.svg"
+                        alt="Email Icon"
+                    /></a>
+                  </div>
+                  <div class="header__contact-text">
+                    <h4 class="header__contact-title">Email</h4>
+                    <a
+                      href="https://mail.google.com/"
+                      class="header__contact-link"
+                    >
+                      Restart-City@gmail.ua
+                    </a>
+                  </div>
+                </div>
 
-        <label class="checkbox" for="checkbox">
-          <input class="checkbox_input" type="checkbox" id="checkbox" />
-          <span class="checkbox_inner">My checkbox #1</span>
-        </label>
-      </div>
+                <div class="header__contact-item">
+                  <div class="header__contact-icon">
+                    <a href="https://ssu.gov.ua/"
+                      ><img
+                        src="/files/img/social-media/icons8-phone.svg"
+                        alt="Phone Icon"
+                    /></a>
+                  </div>
+                  <div class="header__contact-text">
+                    <h4 class="header__contact-title">Contact</h4>
+                    <a href="https://ssu.gov.ua/" class="header__contact-link">
+                      +38 00 501 482
+                    </a>
+                  </div>
+                </div>
 
-      <div class="checkbox-box">
-        <label class="toombler">
-          <span><i class="fa-solid fa-sun"></i></span>
-          <span><i class="fa-solid fa-moon"></i></span>
-          <input type="checkbox" />
-          <span class="move"></span>
-        </label>
-      </div>
+                <div class="header__contact-item">
+                  <div class="header__contact-icon">
+                    <a
+                      href="https://www.google.com/maps/place/%D0%A0%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0-%D0%9C%D0%B0%D1%82%D1%8C/@50.4494297,30.4701471,11182m/data=!3m1!1e3!4m22!1m15!4m14!1m6!1m2!1s0x40d1d9c154700e8f:0x1068488f64010!2z0YPQutGA0LDRl9C90Lg!2m2!1d31.1655799!2d48.379433!1m6!1m2!1s0x40d4cf4ee15a4505:0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!2m2!1d30.5245025!2d50.4503596!3m5!1s0x40d4cf76e65d4dad:0x247b398f405dff8f!8m2!3d50.4265249!4d30.5630521!16s%2Fm%2F04jpnty?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+                      ><img
+                        src="/files/img/social-media/location-sign-svgrepo-com.svg"
+                        alt="Clock Icon"
+                    /></a>
+                  </div>
+                  <div class="header__contact-text">
+                    <h4 class="header__contact-title">Opening Time</h4>
+                    <a
+                      href="https://www.google.com/maps/place/%D0%A0%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0-%D0%9C%D0%B0%D1%82%D1%8C/@50.4494297,30.4701471,11182m/data=!3m1!1e3!4m22!1m15!4m14!1m6!1m2!1s0x40d1d9c154700e8f:0x1068488f64010!2z0YPQutGA0LDRl9C90Lg!2m2!1d31.1655799!2d48.379433!1m6!1m2!1s0x40d4cf4ee15a4505:0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!2m2!1d30.5245025!2d50.4503596!3m5!1s0x40d4cf76e65d4dad:0x247b398f405dff8f!8m2!3d50.4265249!4d30.5630521!16s%2Fm%2F04jpnty?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+                      class="header__contact-link"
+                    >
+                      Mon-Sat: 9:00-19:00
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__social-media">
+              <ul class="header__social-media-list">
+                <li class="header__social-media-item">
+                  <a href="https://uk-ua.facebook.com/"
+                    ><img
+                      src="/files/img/social-media/icons8-facebook.svg"
+                      alt="Facebook"
+                  /></a>
+                </li>
+                <li class="header__social-media-item">
+                  <a href="https://www.instagram.com/ukraine.ua/"
+                    ><img
+                      src="/files/img/social-media/icons8-instagram.svg"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li class="header__social-media-item">
+                  <a href="https://x.com/"
+                    ><img
+                      src="/files/img/social-media/icons8-twitter.svg"
+                      alt="Twitter"
+                  /></a>
+                </li>
+                <li class="header__social-media-item">
+                  <a href="https://ua.linkedin.com/"
+                    ><img
+                      src="/files/img/social-media/icons8-linkedin.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </li>
+                <li class="header__social-media-item">
+                  <a href="https://www.youtube.com/watch?v=nybtOIxlku8"
+                    ><img
+                      src="/files/img/social-media/icons8-youtube.svg"
+                      alt="YouTube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <a href="index.html" class="header__logo">
+              <img
+                src="files/img/logo.png"
+                alt="Логотип Restart-City"
+                class="header__img-logo"
+              />
+              RES.UA
+            </a>
+            <nav class="header__nav">
+              <ul class="header__pages-list">
+                <li class="header__pages-item"><a href="#">HOME</a></li>
+                <li class="header__pages-item"><a href="#">FEATURES</a></li>
+                <li class="header__pages-item"><a href="#">ABOUT US</a></li>
+                <li class="header__pages-item"><a href="#">SERVICES</a></li>
+                <li class="header__pages-item"><a href="#">PROJECTS</a></li>
+                <li class="header__pages-item"><a href="#">BLOG</a></li>
+                <li class="header__pages-item"><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
     </div>
+
+    <section class="section">
+      <div class="section__wrapper">
+        <div class="section__info">
+          <h2 class="section__title">RESTART CITY</h2>
+          <h1 class="section__text">WE WILL RESTORE YOUR DREAM</h1>
+          <div class="section_btn-wrapper">
+            <button class="section__btn">Submit a Request</button>
+          </div>
+        </div>
+
+        <div class="section__swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/3Slava_UA.1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/Slava_UA.1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/Slava_UA.2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/Slava_UA.3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/Slava_UA.4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/files/img/swiper/Slava_UA.5.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--main">
+      <div class="section__wrapper section__wrapper--main">
+        <div class="section__info section__info--main">
+          <p class="section__subtitle">Where Can We Help You</p>
+          <h3 class="section__title section__title--big">
+            Welcome To Construction <br />Real Solutions.
+          </h3>
+          <p class="section__description">
+            Our team of experts specializes in designing and constructing
+            commercial and residential spaces that are functional, sustainable,
+            and aesthetically pleasing.
+          </p>
+          <ul class="section__list">
+            <li class="section__list-item">
+              <img
+                src="/files/img/bxs_checkbox-checked.svg"
+                alt=""
+                class="section__list-icon"
+              />
+              Specializes in designing and constructing
+            </li>
+            <li class="section__list-item">
+              <img
+                src="/files/img/bxs_checkbox-checked.svg"
+                alt=""
+                class="section__list-icon"
+              />
+              Strong understanding of our clients' needs and goals
+            </li>
+            <li class="section__list-item">
+              <img
+                src="/files/img/bxs_checkbox-checked.svg"
+                alt=""
+                class="section__list-icon"
+              />
+              Architectural design, engineering, and construction management
+            </li>
+            <li class="section__list-item">
+              <img
+                src="/files/img/bxs_checkbox-checked.svg"
+                alt=""
+                class="section__list-icon"
+              />
+              Environmental impact of our projects
+            </li>
+            <li class="section__list-item">
+              <img
+                src="/files/img/bxs_checkbox-checked.svg"
+                alt=""
+                class="section__list-icon"
+              />
+              Sustainable engineering solutions
+            </li>
+          </ul>
+          <div class="section__btn-wrapper">
+            <button class="section__btn">Read More...</button>
+          </div>
+        </div>
+        <div class="section__img-wrapper">
+          <iframe
+            frameborder="0"
+            class="juxtapose"
+            width="800px"
+            height="450px"
+            src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=b110dbc0-0d48-11f0-9397-d93975fe8866"
+          ></iframe>
+        </div>
+      </div>
+      <div class="section__footer">
+        <div class="secion__cards">
+          <div class="section__footer-cards">
+            <div class="section__footer-card section__footer-card--image">
+              <div class="section__footer-img">
+                <img
+                  src="files/img/construction-silhouette_1127-3246.jpg"
+                  alt="City under construction"
+                  class="section__footer-img-img"
+                />
+              </div>
+            </div>
+            <div class="section__footer-card section__footer-card--name">
+              <div class="section__footer-name">
+                <p class="section__footer-name-text">Construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer-cards">
+            <div class="section__footer-card section__footer-card--image">
+              <div class="section__footer-img">
+                <img
+                  src="files/img/architec.jpg"
+                  alt="City under construction"
+                  class="section__footer-img-img"
+                />
+              </div>
+            </div>
+            <div class="section__footer-card section__footer-card--name">
+              <div class="section__footer-name">
+                <p class="section__footer-name-text">Architecture</p>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer-cards">
+            <div class="section__footer-card section__footer-card--image">
+              <div class="section__footer-img">
+                <img
+                  src="files/img/consalting.jpg"
+                  alt="City under construction"
+                  class="section__footer-img-img"
+                />
+              </div>
+            </div>
+            <div class="section__footer-card section__footer-card--name">
+              <div class="section__footer-name">
+                <p class="section__footer-name-text">Consulting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--clients">
+      <div class="section__wrapper section__wrapper--clients">
+        <div class="section__values">
+          <div class="section__info section__info--clients">
+            <p class="section__subtitle">Our services</p>
+            <h3 class="section__title section__title--big">
+              WE OFFER OUR CLIENTS
+            </h3>
+          </div>
+
+          <div class="section__cards section__cards--clients">
+            <div class="card-top">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Architecture</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Construction</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Consulting</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Green Building</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Interior Design</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="files/img/construction-silhouette_1127-3246.jpg"
+                    alt="City under construction"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__name">
+                  <p class="card__text">Metal Roofing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__wrapper section__wrapper--project">
+        <div class="section__project">
+          <div class="project">
+            <div class="section__info section__info-project">
+              <p class="section__subtitle">Our Work</p>
+              <h3 class="section__title section__title--big">
+                Explore our recent project
+              </h3>
+            </div>
+            <div class="project-container">
+              <div class="project__item item1">
+                <img src="/files/img/Rectangle 24.png" alt="Large Image" />
+              </div>
+              <div class="project__item item3">
+                <img src="/files/img/Rectangle 25.png" alt="Small Image 1" />
+              </div>
+              <div class="project__item item4">
+                <img src="/files/img/Rectangle 26.png" alt="Small Image 2" />
+              </div>
+              <div class="project__item item5">
+                <img src="/files/img/Rectangle 27.png" alt="Small Image 3" />
+              </div>
+              <div class="project__item item6">
+                <img src="/files/img/Rectangle 28.png" alt="Small Image 4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__company-ifo">
+          <div class="header__bottom">
+            <a href="index.html" class="header__logo">
+              <img
+                src="files/img/logo.png"
+                alt="Логотип Restart-City"
+                class="header__img-logo"
+              />
+              RES.UA
+            </a>
+          </div>
+          <div class="header__social-media">
+            <ul class="header__social-media-list">
+              <li class="header__social-media-item">
+                <a href="https://uk-ua.facebook.com/"
+                  ><img
+                    src="/files/img/social-media/icons8-facebook.svg"
+                    alt="Facebook"
+                /></a>
+              </li>
+              <li class="header__social-media-item">
+                <a href="https://www.instagram.com/ukraine.ua/"
+                  ><img
+                    src="/files/img/social-media/icons8-instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </li>
+              <li class="header__social-media-item">
+                <a href="https://x.com/"
+                  ><img
+                    src="/files/img/social-media/icons8-twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+              <li class="header__social-media-item">
+                <a href="https://ua.linkedin.com/"
+                  ><img
+                    src="/files/img/social-media/icons8-linkedin.svg"
+                    alt="LinkedIn"
+                /></a>
+              </li>
+              <li class="header__social-media-item">
+                <a href="https://www.youtube.com/watch?v=nybtOIxlku8"
+                  ><img
+                    src="/files/img/social-media/icons8-youtube.svg"
+                    alt="YouTube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__links"></div>
+        <div class="footer__support"></div>
+        <div class="footer__contact"></div>
+      </div>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "flip",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

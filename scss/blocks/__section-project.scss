@@ -1,0 +1,69 @@
+.section__wrapper--project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(252, 210, 0);
+    padding-bottom: 64px;
+
+}
+
+.section__info-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 65px;
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: 280px 272px;
+    grid-template-areas:
+    "img1 img3 img3 img4"
+    "img1 img5 img6 img6";
+    row-gap: 30px;
+    column-gap: 24px;
+}
+.item1 { grid-area: img1; }
+.item3 { grid-area: img3; }
+.item4 { grid-area: img4; }
+.item5 { grid-area: img5; }
+.item6 { grid-area: img6; }
+
+.project__item {
+    width: 100%;
+    height: 100%;
+}
+
+.project__item img {
+    width: 100%;
+    height: 100%;
+        /* Растягиваем по заданной высоте */
+    object-fit: cover;
+        /* Заполняем контейнер без искажений */
+}
+
+@media (max-width: 1024px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "img1 img3"
+            "img1 img4"
+            "img5 img6";
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img1"
+            "img3"
+            "img4"
+            "img5"
+            "img6";
+    }
+}
