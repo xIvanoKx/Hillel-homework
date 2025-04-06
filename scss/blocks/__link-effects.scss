@@ -1,0 +1,231 @@
+/* ДЛЯ ЛОГОТИПА */
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    position: relative;
+    padding: 5px;
+
+    &:hover {
+        transform: scale(1.05) rotate(-2deg);
+        color: red;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .header__img-logo {
+            animation: logoBounce 0.6s ease;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: red;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    &:hover::after {
+        width: 80%;
+    }
+}
+
+.header__img-logo {
+    transition: all 0.3s ease;
+}
+
+@keyframes logoBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-3px);
+    }
+}
+
+
+
+/* ДЛЯ ПОСИЛАНЬ */
+.header__contact-link {
+    color: rgb(182, 49, 31);
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 2px 0;
+
+    &:hover {
+        color: #d62c2c;
+        transform: translateX(3px);
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            animation: underlineGrow 0.3s forwards;
+        }
+    }
+
+    &:active {
+        transform: translateX(3px) scale(0.95);
+    }
+
+    &::after {
+        content: '→';
+        margin-left: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    &:hover::after {
+        margin-left: 5px;
+        opacity: 1;
+        animation: arrowFloat 0.8s infinite alternate;
+    }
+}
+
+@keyframes underlineGrow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes arrowFloat {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+.header__contact-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(252, 210, 0, 0.5);
+    border-radius: 2px;
+}
+/* ДЛЯ ФУТЕРА (центрального) */
+/* ЕФЕКТ НАТИСКАННЯ / Наведення  */
+.section__footer-cards {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.section__footer-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section__footer-cards:active {
+    transform: scale(1.02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ДЛЯ ФУТЕРА (КІНЕЦЬ) */
+.footer__links-title {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer__links-title:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(252, 210, 0, 0.4);
+}
+
+/* ЕФЕКТИ ДЛЯ ПОСИЛАНЬ */
+.footer__links-link {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding-bottom: 2px;
+}
+
+/* ПЛАВНЕ ПІДКРЕСЛЕННЯ */
+.footer__links-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(252, 210, 0);
+    transition: width 0.3s ease;
+}
+
+.footer__links-link:hover {
+    transform: translateX(3px);
+    color: rgb(252, 210, 0);
+}
+
+.footer__links-link:hover::after {
+    width: 100%;
+}
+
+/* ЕФЕКТ НАТИСКАННЯ */
+.footer__links-link:active::after {
+    animation: underlinePulse 0.4s ease;
+}
+
+
+
+@keyframes underlinePulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1.1);
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* АНІМОВАНЕ ПІДКРЕСЛЕННЯ */
+.footer__links-link::before {
+    transition: width 0.4s ease, opacity 0.3s ease;
+}
+
+.footer__links-link:hover::before {
+    width: 100%;
+}
+
+/* ЕФЕКТ НАТИСКАННЯ */
+.footer__links-link:active {
+    animation: clickEffect 0.4s ease;
+}
+
+.footer__links-mod:hover .footer__links-link:hover {
+    color: rgb(252, 210, 0);
+}
+

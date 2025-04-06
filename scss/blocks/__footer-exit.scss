@@ -1,0 +1,151 @@
+.footer {
+    background-color: #2D3E4E;
+    color: white;
+}
+
+.footer__wrapper {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.footer__company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.footer__logo-link {
+    color: rgb(252, 210, 0);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__img-logo {
+    width: 40px;
+    height: auto;
+}
+
+.footer__social-media-list {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__social-media-link {
+    display: inline-flex;
+}
+
+.footer__social-media-link img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.footer__links-mod {
+    align-items: center;
+}
+
+.footer__links-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__links-title {
+    color: rgb(252, 210, 0);
+    font-size: 20px;
+    margin: 0 0 35px 0;
+}
+
+.footer__links-link,
+.footer__about-company {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (max-width: 1000px) {
+    .footer__wrapper {
+        gap: 30px;
+    }
+
+    .footer__links-wrapper {
+        gap: 30px;
+    }
+
+    .footer__links-list {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer__links {
+        align-items: center;
+    }
+
+    .footer__links-title {
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer__links-list {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__social-media-list {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__wrapper {
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .footer__links-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__social-media-link img {
+        width: 20px;
+        height: 20px;
+    }
+}
